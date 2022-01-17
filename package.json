@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@sawrrawr/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A package of basic functions, working with arrays and also comparing values, arrays an objects to receive assertions of equality.",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/sawrrawr/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sarah White",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sawrrawr/lotide/issues"
