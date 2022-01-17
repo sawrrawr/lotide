@@ -6,7 +6,7 @@ const assertArraysEqual = function(array1, array2) {
     console.log(`💚💚💚 Assertion Passed! Your arrays match!`);
   } else if (result === false) {
   console.log(`❤️ ❤️ ❤️ Assertion Failed! Your arrays do not match!`);
-  }
+  } 
 };
 
 // quick test code
