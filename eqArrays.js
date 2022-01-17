@@ -19,6 +19,7 @@ const eqArrays = function(array1, array2) {
 
 // test code
 // console.log(eqArrays(['one', 'two'], ['one', 'two']));
+// console.log(eqArrays([1, 2], [12]));
 
 
 
