@@ -14,14 +14,7 @@ const eqArrays = function(array1, array2) {
  return true;
 };
 
-const assertArraysEqual = function(array1, array2) {
-  eqArrays(array1, array2)
-  if (true) {
-    console.log(`💚💚💚 Assertion Passed! Your arrays match!`);
-  } else {
-    console.log(`❤️ ❤️ ❤️ Assertion Failed! Your arrays do not match!`);
-  }
-};
+const assertArraysEqual = require('./assertArraysEqual');
 
 const takeUntil = (array, callback) => {
   let newArray =[];
@@ -45,4 +38,6 @@ console.log(results2);
 
 assertArraysEqual(results1, [1, 2, 5, 7, 2]);
 assertArraysEqual(results2, [ "I've", 'been', 'to', 'Hollywood']);
+
+module.exports = takeUntil;
 

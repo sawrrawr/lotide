@@ -67,3 +67,5 @@ const input3 = {
 };
 
 assertEqual(findKey(input3,x => x.stars === 2),"Blue Hill");
+
+module.exports = findKey;

@@ -15,3 +15,5 @@ const letterPositions = function(sentence) {
 
 console.log(letterPositions('hello there'));
 
+module.exports = letterPositions;
+

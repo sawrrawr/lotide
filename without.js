@@ -19,14 +19,7 @@ const eqArrays = function(array1, array2) {
  return result;
 };
 
-const assertArraysEqual = function(array1, array2) {
-  eqArrays(array1, array2)
-  if (result === true) {
-    console.log(`💚💚💚 Assertion Passed! Your arrays match!`);
-  } else {
-    console.log(`❤️ ❤️ ❤️ Assertion Failed! Your arrays do not match!`);
-  }
-};
+const assertArraysEqual = require('./assertArraysEqual');
 
 const without = function(array1, array2) {
   let newArray = [];
@@ -50,3 +43,5 @@ const without = function(array1, array2) {
 const words = ['hello', 'world', 'lighthouse'];
 without(words, ['lighthouse']);
 assertArraysEqual(words, ['hello', 'world', 'lighthouse']);
+
+module.exports = without;

@@ -1,26 +1,5 @@
-const eqArrays = function(array1, array2) {
-  //make sure arrays are the same length
-  if (array1.length !== array2.length) {
-    return false;
-  } else {
-  // compares the indexes of each array, one by one
-    for (let i = 0; i < array1.length; i++) {
-      // if arrays do not match, return false
-      if (array1[i] !== array2[i]) {
-       return false;
-      }
-    }
- }
- return true;
-};
-const assertArraysEqual = function(array1, array2) {
-  let result = eqArrays(array1, array2)
-  if (result === true) {
-    console.log(`💚💚💚 Assertion Passed! Your arrays match!`);
-  } else {
-    console.log(`❤️ ❤️ ❤️ Assertion Failed! Your arrays do not match!`);
-  }
-};
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require('./assertArraysEqual');
 const words = ["ground", "control", "to", "major", "tom"];
 
 const map = (array, callback) => {
@@ -41,3 +20,5 @@ const resultsForNumbers = map(numbers, number => number.toFixed(2));
 assertArraysEqual(resultsForWords, resultWords);
 assertArraysEqual(resultsForNumbers, resultNumbers);
 assertArraysEqual(wordsUpperCase, upperCaseResults);
+
+module.exports = map;
