@@ -7,8 +7,7 @@ const assertArraysEqual = require('./assertArraysEqual');
 // if the origin array has one or two elements, return an empty array
 const middle = function(array) {
   if (array.length <= 2) {
-    let answerArray = [];
-    return answerArray;
+    return [];
   } else if (array.length % 2 === 0) {
     let sum = 0;
     let oneUp = '';
